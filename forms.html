@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма заявки | Astra Events</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/forms.css">
+
+</head>
+<body>
+
+
+<header>
+    <div class="navbar-custom d-flex align-items-center justify-content-between flex-wrap">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Astra Events">
+        </a>
+        <nav class="d-flex align-items-center flex-grow flex-wrap justify-content-center">
+            <a href="index.html" class="nav-link">главная</a>
+            <a href="services.html" class="nav-link">услуги</a>
+            <a href="portfolio.html" class="nav-link">портфолио</a>
+            <a href="about.html" class="nav-link">о нас</a>
+        </nav>
+        <a href="forms.html" class="d-flex align-items-center btn-brief">ЗАПОЛНИТЬ&nbsp;БРИФ</a>
+    </div>
+</header>
+
+<main class="container-fluid px-3">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xxl-11">
+
+            <div class="form-hero text-center mb-5">
+                <h1 class="display-5 fw-black text-gold">
+                    Ответьте на парочку вопросов и мы все уладим :)
+                </h1>
+            </div>
+
+            <div class="form-wrapper">
+                <div class="glass-form-container">
+
+                    <form id="event-form">
+
+                        <div class="mb-4">
+                            <label for="contact" class="form-label">Контакт для связи *</label>
+                            <input type="text" id="contact" class="form-control form-control-custom" placeholder="Телефон или email" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="event-date" class="form-label">Дата мероприятия *</label>
+                            <input type="date" id="event-date" class="form-control form-control-custom" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="location" class="form-label">Желаемая локация (онлайн/офлайн) *</label>
+                            <select id="location" class="form-select form-select-custom" required>
+                                <option value="">Выберите тип локации</option>
+                                <option value="online">Онлайн</option>
+                                <option value="offline">Офлайн</option>
+                                <option value="hybrid">Гибридный формат</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="participants" class="form-label">Количество участников *</label>
+                            <input type="number" id="participants" class="form-control form-control-custom" min="1" placeholder="Например: 50" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="service-type" class="form-label">Тип услуги *</label>
+                            <select id="service-type" class="form-select form-select-custom" required>
+                                <option value="">Выберите тип услуги</option>
+                                <option value="corporate">Корпоративное мероприятие</option>
+                                <option value="wedding">Свадьба</option>
+                                <option value="birthday">День рождения</option>
+                                <option value="conference">Конференция</option>
+                                <option value="festival">Фестиваль</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="source" class="form-label">Как узнали о нас? *</label>
+                            <select id="source" class="form-select form-select-custom" required>
+                                <option value="">Выберите вариант</option>
+                                <option value="search">Поиск в интернете</option>
+                                <option value="social">Социальные сети</option>
+                                <option value="recommendation">Рекомендация</option>
+                                <option value="advertising">Реклама</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="comments" class="form-label">Комментарии</label>
+                            <textarea id="comments" class="form-control form-textarea-custom" rows="5"
+                                      placeholder="Расскажите подробнее о вашем мероприятии, особых пожеланиях или вопросах..."></textarea>
+                        </div>
+
+                        <div class="d-flex">
+                            <button type="submit" class="btn btn-submit">
+                                ОТПРАВИТЬ ЗАЯВКУ
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="flex-wrap d-flex align-items-flex-start">
+    <img src="img/main.jpg" alt="" class="footer-img">
+    
+    <div class="footer-left d-flex flex-column text-left">
+        <a class="fw-bold" href="mailto:astramail@info.com">astramail@info.com</a>
+        <div class="nullable footer-contact-phone">8 800 535 35 35</div>
+        <div class="social-icons d-flex">
+            <a href="#"><img src="img/tg.png" alt="Telegram"></a>
+            <a href="#"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+            <a href="#"><img src="img/inst.png" alt="Instagram"></a>
+        </div>
+        <a href="forms.html" class="d-flex align-items-center btn-brief">ЗАПОЛНИТЬ&nbsp;БРИФ</a>
+    </div>
+    <div class="footer-right d-flex flex-column text-center">
+        <a href="index.html" class="fw-bold">Главная</a>
+        <a href="services.html" class="fw-bold">Услуги</a>
+        <a href="portfolio.html" class="fw-bold">Портфолио</a>
+        <a href="about.html" class="fw-bold">О нас</a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById('event-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const sanitizeInput = input => input.replace(/[<>]/g, '');
+
+        const formData = {
+            contact: sanitizeInput(document.getElementById('contact').value),
+            date: document.getElementById('event-date').value,
+            location: document.getElementById('location').value,
+            participants: document.getElementById('participants').value,
+            service: document.getElementById('service-type').value,
+            source: document.getElementById('source').value,
+            comments: sanitizeInput(document.getElementById('comments').value)
+        };
+
+        const contact = formData.contact.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phoneRegex = /^[\d\s\-\+\(\)]{7,}$/;
+
+        if (!emailRegex.test(contact) && !phoneRegex.test(contact.replace(/\s/g, ''))) {
+            alert('Пожалуйста, введите корректный email или телефон');
+            return;
+        }
+
+        console.log('Данные формы:', formData);
+        alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+        this.reset();
+
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('event-date').min = today;
+    });
+
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('event-date').min = today;
+
+    const contactInput = document.getElementById('contact');
+    contactInput.addEventListener('focus', () => contactInput.placeholder = 'Например: +7 999 123-45-67 или email@example.com');
+    contactInput.addEventListener('blur', () => contactInput.placeholder = 'Телефон или email');
+</script>
+
+</body>
+</html>
